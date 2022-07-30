@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html,
+body,
+#root,
+.App {
+    height: 100%;
+}
+
+#root {
+    --bg-color: #10143A;
+    --bg-color-2: #33005d;
+    --bg-color-3: #1f2345;
+    --button-color: #33DB7E;
+    --text-color: #ffffff;
+    --text-color-2: #9b9b9b;
+    --neon-color: #EF0195;
+    --neon-color-2: #FCDE86;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+hr {
+    background-color: #FFF;
+}
+
+*::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--neon-color);
+    border-radius: 20px;
+    width: 10px;
+}

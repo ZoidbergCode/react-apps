@@ -1,0 +1,323 @@
+.play {
+    background-color: var(--bg-color);
+    height: 100%;
+    padding: 5px 15px;
+}
+
+.play__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.play__game {}
+
+.game {
+    max-width: 50%;
+    background-color: var(--bg-color-3);
+    height: 300px;
+    position: relative;
+}
+
+.game__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.game__container>* {
+    flex: 0 0 38%;
+}
+
+.game__container>*:not(:last-child) {
+    margin-right: 5px;
+}
+
+.game__timer {}
+
+.timer {
+    width: 100%;
+    height: 37px;
+    position: relative;
+}
+
+.timer__display {
+    transition: all 0.09s linear;
+    height: 37px;
+    background-color: var(--neon-color);
+}
+
+.timer__value {
+    position: absolute;
+    top: 5px;
+    left: 160px;
+    color: var(--text-color);
+    font-family: 'Roboto mono';
+    font-weight: 600;
+    font-size: 16px;
+    user-select: none;
+}
+
+.game__crash {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    font-size: 40px;
+    letter-spacing: -4px;
+    color: var(--text-color);
+    font-family: 'Roboto Mono';
+    font-weight: 600;
+    user-select: none;
+}
+
+canvas {
+    overflow: hidden;
+    border-bottom: 1px solid var(--text-color-2);
+    border-left: 1px solid var(--text-color-2);
+}
+
+.play__chat {}
+
+.chat {
+    border: 1px solid var(--text-color-2);
+    background-color: var(--bg-color-3);
+}
+
+.chat__container {
+    height: 90px;
+}
+
+.chat__message {}
+
+.message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all .2s ease;
+    padding: 20px 0;
+}
+
+.message__img img {
+    width: 50px;
+}
+
+.message__name {
+    padding-top: 15px;
+    color: var(--neon-color);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: bold;
+    min-width: 170px;
+}
+
+.message__body {
+    padding-top: 15px;
+    font-family: Inter;
+    font-size: 13px;
+    color: var(--text-color-2)
+}
+
+.results__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color-3);
+    border-left: 1px solid var(--text-color-2);
+    border-right: 1px solid var(--text-color-2);
+    border-top: 1px solid var(--text-color-2);
+    overflow: hidden;
+    padding: 20px 40px;
+}
+
+.results__result {
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: bold;
+    color: #fff;
+    padding: 15px;
+}
+
+.play__chat-input {}
+
+.chat-input {
+    border: 1px solid var(--text-color-2);
+    border-top: none;
+    background-color: var(--bg-color-3);
+}
+
+.chat-input__container {
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(66, 68, 75);
+    padding: 10px 25px;
+    color: rgb(99, 114, 197);
+    font-weight: bold;
+    font-family: Inter;
+    font-size: 12px;
+}
+
+.play__bets {}
+
+.bets {
+    max-width: 50%;
+    background-color: var(--bg-color-3);
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 300px;
+}
+
+.bets__container {
+    height: 100%;
+}
+
+.bets__header {
+    background-color: #42444B;
+}
+
+.bets-header {}
+
+.bets-header__item {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.bets__item {
+    padding: 5px;
+}
+
+.bets__win .bets__item {
+    color: rgb(0, 255, 64);
+    font-family: Inter;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bets__loose .bets__item {
+    color: red;
+    font-family: Inter;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bets__playing .bets__item {
+    font-family: Inter;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.bets__table {
+    padding: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.bets__1 {
+    background-color: var(--bg-color-3);
+}
+
+.bets__2 {
+    background-color: #484a5c;
+}
+
+.bets__none {
+    display: none;
+}
+
+.playersBets {
+    font-family: Inter;
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.connectBets {
+    color: var(--text-color-2);
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.containerBets {
+    opacity: 0.7;
+    margin: auto 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+
+.gamepad {
+    flex: 0 0 23%;
+    padding: 5px;
+    background-color: var(--bg-color-3);
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gamepad button {
+    background-color: var(--neon-color);
+    padding: 7px 18px;
+    color: var(--text-color);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all .15s ease;
+    margin: 20px 0;
+}
+
+.gamepad button:hover {
+    opacity: 0.9;
+}
+
+.gamepad__description {
+    font-family: Inter;
+    font-weight: 300;
+    color: var(--text-color-2);
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 1100px) {
+    .gamepad {
+        flex: 0 0 21%;
+    }
+}
+
+@media (max-width: 1033px) {
+    .game__container>* {
+        flex: 0 0 100%
+    }
+
+    .game {
+        max-width: 100%;
+
+    }
+
+    .gamepad {
+        margin: 5px 0;
+        box-sizing: border-box;
+    }
+
+    .bets {
+        max-width: 100%;
+        border: 1px solid var(--text-color-2);
+        padding: 5px;
+    }
+}

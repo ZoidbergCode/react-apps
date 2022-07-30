@@ -1,0 +1,40 @@
+.FAQ {
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.FAQ__container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.FAQ__title {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 26px;
+    font-family: Inter;
+    padding: 100px 0 20px 0;
+}
+
+.FAQ__content {}
+
+.FAQ__block {}
+
+.faq-bloc {}
+
+.faq-bloc__title {
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: Inter;
+    padding: 10px 0;
+}
+
+.faq-bloc__text {
+    color: var(--text-color-2);
+    font-size: 16px;
+    font-family: Inter;
+}
+
+.FAQ__hr {
+    margin: 15px 0;
+}

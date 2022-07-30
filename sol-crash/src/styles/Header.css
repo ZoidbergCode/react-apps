@@ -1,0 +1,97 @@
+.header {
+    background-color: var(--bg-color-2);
+    color: var(--text-color);
+}
+
+.header__container {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+}
+
+.header__links>*:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header__logo {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.green {
+    color: var(--neon-color)
+}
+
+.header__link {
+    color: --text-color;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color .23s ease;
+}
+
+.header__link:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--neon-color-2);
+    transition: width 0.5s;
+}
+
+.header__link:hover {
+    color: var(--neon-color)
+}
+
+.header__link:hover:after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: var(--neon-color);
+    transition: width 0.5s;
+}
+
+.header__button button {
+    background-color: var(--neon-color);
+    padding: 7px 18px;
+    color: var(--text-color);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .15s ease;
+}
+
+.header__button button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 767px) {
+    .header__link {
+        display: none;
+    }
+}
