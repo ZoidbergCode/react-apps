@@ -1,0 +1,106 @@
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cards__progress {
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    opacity: 0.7;
+    z-index: 5;
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+
+.cards__progress span {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px 15px;
+    color: #000;
+    z-index: 4;
+}
+
+.cards__line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: greenyellow;
+    transition: all .2s ease;
+    height: 100%;
+}
+
+.cards__win {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(154, 205, 50, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.cards__win span {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow:
+        1px 1px 1px #000,
+        1px 0px 1px #000,
+        0px 1px 1px #000,
+        -1px -1px 1px #000,
+        0px -1px 1px #000,
+        -1px 0px 1px #000;
+    max-width: 500px;
+}
+
+.cards__win button {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+    transition: all .15s ease;
+    min-width: 150px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cards__win button:hover {
+    background-color: rgb(255, 255, 255, 0.5)
+}
+
+.cards__top {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(240, 244, 195, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #121212;
+    user-select: none;
+    transition: all .15s ease;
+}
+
+.cards__top:hover {
+    background-color: rgb(244, 250, 173);
+}
