@@ -1,0 +1,51 @@
+.developer {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.developer__container {
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.developer__title {
+    width: 100%;
+}
+
+.developer__h2 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.developer__img {
+    max-height: 350px;
+    margin: 5px;
+}
+
+.developer__p {
+    margin: 5px;
+}
+
+.developer__list {
+    margin: 15px;
+}
+
+.developer__link {
+    text-decoration: none;
+    color: gold
+}
+
+.developer__body {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.point1 {
+    flex: 0 0 30%;
+    margin-left: 200px;
+}

@@ -1,0 +1,84 @@
+.Login {
+    width: 100%;
+}
+
+.Login__container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 500px;
+}
+
+.Login__form-input {
+    padding: 5px 15px;
+    margin: 5px 0;
+    background-color: #666e83;
+    border: none;
+    outline: none;
+    transition: all .15s ease;
+    border-radius: 12px;
+}
+
+.Login__form-button {
+    padding: 5px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #666e83;
+    border: none;
+    outline: none;
+    color: #c1c1c1;
+    transition: all .15s ease;
+    border-radius: 12px;
+}
+
+.Login__title {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.Login__description {
+    margin: 0 auto;
+    max-width: 500px;
+    color: #c1c1c1;
+    padding: 5px;
+    user-select: none;
+    text-align: center;
+}
+
+.regLink {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.regLink a {
+    font-size: 12px;
+    color: #c1c1c1;
+    transition: all .15s ease;
+    text-decoration: none;
+}
+
+.regLink a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #fafafa
+}
+
+.Login__form-button:hover {
+    color: #fafafa;
+    background-color: #7e8491;
+}
+
+.Login__form-input:hover {
+    color: #fafafa;
+    background-color: #7e8491;
+}

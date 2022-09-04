@@ -1,0 +1,129 @@
+.Links {
+    width: 100%;
+}
+
+.Links__container {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Links__title {
+    text-align: center;
+    margin: 15px;
+}
+
+.Links__item {}
+
+.l-item {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    background-color: #373c49;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.l-item__target {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.l-item__target a {
+    max-width: 80%;
+    overflow: hidden;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.l-item__short {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.l-item__short a {
+    text-decoration: none;
+}
+
+.l-item__counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3px 0;
+}
+
+.Links__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Links__button button {
+    padding: 5px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #666e83;
+    border: none;
+    outline: none;
+    color: #c1c1c1;
+    transition: all .15s ease;
+    border-radius: 12px;
+}
+
+.Links__button button:hover {
+    color: #fafafa;
+    background-color: #7e8491;
+}
+
+.i_item__stroke {
+    background-color: #515766;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.Links__menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Links__button-back {
+    padding: 5px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #666e83;
+    border: none;
+    outline: none;
+    color: #c1c1c1;
+    transition: all .15s ease;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.Links__button-back:hover {
+    color: #fafafa;
+    background-color: #7e8491;
+}
+
+.Links__select {
+    padding: 5px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    background-color: #666e83;
+    border: none;
+    outline: none;
+    color: #fafafa;
+    transition: all .15s ease;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.Links__select option:disabled {
+    color: #ffffff;
+}
