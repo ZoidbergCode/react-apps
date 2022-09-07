@@ -1,0 +1,37 @@
+.random {
+    width: 100%; 
+    &__container {
+        margin: 0 auto;
+        max-width: 1080px;
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+    }
+}
+.cocktail__column {
+}
+.coctail__item {
+}
+.cocktail__image {
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+    & img {
+        max-width: 300px;
+    }
+}
+.cocktail__title {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.cocktail__list {
+}
+.cocktail__list-item {
+}
+.coctail__list-item {
+}
+.list-item {
+    margin-left: 30px;
+    margin-top: 5px
+}
